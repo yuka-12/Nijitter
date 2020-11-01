@@ -27,7 +27,7 @@
       <textarea id="text" class="form-control" name="text"></textarea>
     </div>
     </form>
-    <input type="button" id="ajax" class="btn btn-dark" value="送信">
+    <input type="button" id="ajax" class="btn btn-dark" value="submit">
   </div>
   <br>
   <div class="result"></div>

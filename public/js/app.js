@@ -15,14 +15,14 @@
              '<h6>'+ this.name + '</h6>'+
              '<span>' + this.text + '</span><br>' +
              '<form method="post" action="" accept-charset="utf-8" return false>' +
-             '<div class="rapper-form col-sm-5 center-block"><input type="button" class="update-button btn btn-dark" value="編集"> ' +
-             '<input type="button" id="delete-' + this.id + '" class="delete btn btn-danger" name="' + this.id + '" value="削除"><br><br>' +
+             '<div class="rapper-form col-sm-5 center-block"><input type="button" class="update-button btn btn-dark" value="edit"> ' +
+             '<input type="button" id="delete-' + this.id + '" class="delete btn btn-danger" name="' + this.id + '" value="delete"><br><br>' +
              '<div class="update-form">' +
              '<label for="name">Name:</label>' +
              '<input type="text" class="update-name form-control" name="name" value="' + this.name +'"><br>' +
              '<label for="text">Text:</label>' +
              '<textarea class="update-text form-control" name="text">' + this.text + '</textarea><br>' +
-             '<input type="button" id="update-' + this.id + '" class="update btn btn-dark" name="' + this.id + '" value="保存">' +
+             '<input type="button" id="update-' + this.id + '" class="update btn btn-dark" name="' + this.id + '" value="submit">' +
              '</div></form><br></div>'
 
            ).appendTo('.posts');
@@ -51,7 +51,7 @@
            });
 
            $(document).on('click', '.delete',function(){
-             var deleteConfirm = confirm('削除してよろしいでしょうか？');
+             var deleteConfirm = confirm('Are you sure you want to delete?');
 
              if(deleteConfirm == true) {
 
